@@ -13,7 +13,7 @@ meaning high variance among/between neurons, not within
 After config 10, all models are using Glorot init by default
 This is all gen_02
 
-
+gen_03 is like gen_02 but made for mnist
 
 
 Other ideas include a -log mean neuron output signal variance for each hidden layer term in the loss,
