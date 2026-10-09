@@ -1,0 +1,32 @@
+{
+    "note": "way more potent, bigger hidden layer",
+    "seed": 42,
+    "dataset": {
+        "test_split": 0.15,
+        "valid_split": 0.15,
+        "bits": 32
+    },
+    "training": {
+        "epochs": 1000,
+        "batch_size": 256,
+        "lr": 0.003
+    },
+    "models": [
+        {
+            "name": "InterNVG",
+            "layers": [16, 1],
+            "init": {
+                "type": "interNVG",
+                "kwargs": {
+                    "starting_feature_var": 3.0,
+                    "starting_neuron_var": 0.1 
+                }
+            }
+        },
+        {
+            "name": "baseline_parity",
+            "layers": [16, 1],
+            "init": {"type": "glorot"}
+        }
+    ]
+}
