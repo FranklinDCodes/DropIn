@@ -1,0 +1,8 @@
+10/08/2026 23:40:49
+
+Dataset shape: X=(19020, 10), y=(19020, 1)
+Class balance: 0.648 gamma, 0.352 hadron
+
+drop_in
+Accuracy: 0.8384156823158264
+Test loss: 0.36070716381073
