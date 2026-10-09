@@ -1,0 +1,32 @@
+{
+    "note": "early stop",
+    "seed": 42,
+    "dataset": {
+        "test_split": 0.15,
+        "valid_split": 0.15,
+        "bits": 32
+    },
+    "training": {
+        "epochs": 1000,
+        "batch_size": 256,
+        "lr": 0.003
+    },
+    "models": [
+        {
+            "name": "drop_in",
+            "layers": [64, 1],
+            "drop_in": true,
+            "drop_in_kwargs": {"mean": 1.1, "std": 1.0, "rate": 0.05},
+            "stop_drop_in_after": 250,
+            "L2": false,
+            "noise_data": false
+        },
+        {
+            "name": "baseline_parity",
+            "layers": [64, 1],
+            "drop_in": false,
+            "L2": false,
+            "noise_data": false
+        }
+    ]
+}

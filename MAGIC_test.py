@@ -4,6 +4,7 @@ import datetime
 import requests
 from io import StringIO
 from copy import deepcopy
+import sys
 
 import pandas as pd
 import numpy as np
@@ -12,13 +13,14 @@ import torch
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_curve, auc
+import matplotlib
 
 from model import Model
 from plotting import *
 
 
-CFG_NAME = "configs/config_1.json"
-SHOW_FIGS = False
+CFG_NAME = sys.argv[1]
+SHOW_FIGS = True
 with open(CFG_NAME, 'r') as fl:
 	CFG = json.load(fl) 
 	
@@ -193,6 +195,7 @@ for model_name, model in list(zip(l_model_names, l_all_models)):
         model.update(epoch + 1)
 
     if SHOW_FIGS:
+        matplotlib.use('TkAgg')
         plot_loss(train_losses, validation_losses)
 
     # predict test set
@@ -205,6 +208,8 @@ for model_name, model in list(zip(l_model_names, l_all_models)):
     correct = (y_hat_test_classes == torch.squeeze(t_Y_test)).sum()
     total = y_hat_test_classes.shape[0]
     acc = correct / total
+    fpr, tpr, _ = roc_curve(np.squeeze(t_Y_test.numpy()), np.squeeze(t_Yhat.detach().numpy()))
+    roc_auc = auc(fpr, tpr)
 
     if SHOW_FIGS:
 
@@ -214,8 +219,6 @@ for model_name, model in list(zip(l_model_names, l_all_models)):
         # https://www.geeksforgeeks.org/machine-learning/auc-roc-curve/
         plt.figure(figsize=(7, 5))
 
-        fpr, tpr, _ = roc_curve(np.squeeze(t_Y_test.numpy()), np.squeeze(t_Yhat.detach().numpy()))
-        roc_auc = auc(fpr, tpr)
         plt.plot(fpr, tpr, label=f'Neural Net (AUC = {roc_auc:.2f})')
 
         plt.plot([0, 1], [0, 1], 'r--', label='Random Guess')

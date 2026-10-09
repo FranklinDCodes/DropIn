@@ -1,0 +1,17 @@
+10/09/2026 00:16:49
+
+Dataset shape: X=(19020, 10), y=(19020, 1)
+Class balance: 0.648 gamma, 0.352 hadron
+
+drop_in
+Accuracy: 0.8538380861282349
+Test loss: 0.33467307686805725
+AUC: 0.9131087817628196
+Best model epoch: 970
+
+baseline_parity
+Accuracy: 0.8587451577186584
+Test loss: 0.33480721712112427
+AUC: 0.9133367465172052
+Best model epoch: 989
+
