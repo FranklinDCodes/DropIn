@@ -94,28 +94,36 @@ t_Y_test = torch.tensor(Y_test, dtype=dtype)
 # create models
 l_all_models = list()
 l_model_names = list()
+l_initializers = list()
 l_model_cfgs = CFG["models"]
 for model_cfg in l_model_cfgs:
 
-	# unpack model config
-	use_drop_in = model_cfg.get("drop_in", False)
-	stop_drop_in_after = model_cfg.get("stop_drop_in_after", None)
-	drop_in_kwargs = model_cfg.get("drop_in_kwargs", dict())
-	layers = model_cfg["layers"]
-	activation = model_cfg.get("activation", "Tanh")
+    # unpack model config
+    use_drop_in = model_cfg.get("drop_in", False)
+    stop_drop_in_after = model_cfg.get("stop_drop_in_after", None)
+    drop_in_kwargs = model_cfg.get("drop_in_kwargs", dict())
+    layers = model_cfg["layers"]
+    activation = model_cfg.get("activation", "Tanh")
 
-	# make model
-	model = Model(
-		t_X_train.shape[-1],
-		layers,
-		use_drop_in,
-		stop_drop_in_after,
-		drop_in_kwargs,
-		activation
-	)
-	
-	l_all_models.append(model)
-	l_model_names.append(model_cfg["name"])
+    # make model
+    model = Model(
+        t_X_train.shape[-1],
+        layers,
+        use_drop_in,
+        stop_drop_in_after,
+        drop_in_kwargs,
+        activation
+    )
+
+    init_cfg = model_cfg.get("init", {"type": "glorot"})
+    init_type = init_cfg["type"]
+    init_kwargs = init_cfg.get("kwargs", dict())
+
+    initializer = ParamInitializer(SEED, init_type, **init_kwargs)
+
+    l_all_models.append(model)
+    l_model_names.append(model_cfg["name"])
+    l_initializers.append(initializer)
 
 
 # start logging
@@ -132,13 +140,12 @@ BATCH_SIZE = CFG["training"]["batch_size"]
 LR = CFG["training"]["lr"]
 loss_func = torch.nn.BCEWithLogitsLoss()
 
-for model_name, model in list(zip(l_model_names, l_all_models)):
+for model_name, model, initializer in list(zip(l_model_names, l_all_models, l_initializers)):
 
     print(f"Starting {model_name}...")
 
-    # build init
-    initer = ParamInitializer(SEED, )
-
+    # initialize model params
+    initializer(model)
 
     optim = torch.optim.AdamW(model.parameters(), lr=LR)
     train_losses = []

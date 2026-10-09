@@ -69,7 +69,7 @@ class ParamInitializer:
 
     # init a single linear layer
     # takes an init func that takes a fan_in, fan_out and outputs a mat fan_in X fan_out
-    def _init_linear(layer: nn.Linear, init_fn: any, gen: torch.Generator):
+    def _init_linear(self, layer: nn.Linear, init_fn: any, gen: torch.Generator):
 
         fan_in, fan_out = layer.in_features, layer.out_features
         W = init_fn(fan_in, fan_out, gen)

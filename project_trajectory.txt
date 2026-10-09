@@ -4,13 +4,14 @@ Instead of using dropout, I think this is ideal to maximize capacity-per-computa
 
 First I tried randomly boosting weights during training, but this seemed to not help.
 In the config, this is called drop-in
+All the configs for this are in gen_01
 
 Next, I want to use Kaiming init but distribute the variance so that weights within a given neuron are similar, 
 but neuron to neuron there is large variance for any given feature. 
 I'll call this InterNVG_init (Inter-neuron variance Glorot init), 
 meaning high variance among/between neurons, not within
-
-After config 10, all models using Glorot init
+After config 10, all models are using Glorot init by default
+This is all gen_02
 
 
 
@@ -18,3 +19,6 @@ After config 10, all models using Glorot init
 Other ideas include a -log mean neuron output signal variance for each hidden layer term in the loss,
     or boosting random weight updates (higher lr) to strengthen connections that seem generally positive
 
+
+
+Once something works, compare with other regularizations, try noised data, try different model architectures, etc.
