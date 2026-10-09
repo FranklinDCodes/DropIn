@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_curve, auc
 import matplotlib
 
-from model import Model
+from model import *
 from plotting import *
 
 
@@ -135,6 +135,10 @@ loss_func = torch.nn.BCEWithLogitsLoss()
 for model_name, model in list(zip(l_model_names, l_all_models)):
 
     print(f"Starting {model_name}...")
+
+    # build init
+    initer = ParamInitializer(SEED, )
+
 
     optim = torch.optim.AdamW(model.parameters(), lr=LR)
     train_losses = []
