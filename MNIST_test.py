@@ -46,7 +46,7 @@ torch.random.manual_seed(SEED)
 # get data
 mnist = fetch_openml('mnist_784', version=1, as_frame=False, parser='auto')
 X_all = mnist.data.astype(float) / 255.0   # normalize to [0, 1]
-y_all = mnist.target.astype(int).reshape(-1, 1)
+y_all = mnist.target.astype(int)
 
 # Split dataset
 TEST_SIZE, VAL_SIZE = CFG["dataset"]["test_split"], CFG["dataset"]["valid_split"]
@@ -69,12 +69,13 @@ d_dtypes = {
 	64: torch.float64
 }
 dtype = d_dtypes[CFG["dataset"].get("bits", 32)]
+label_dtype = torch.long
 t_X_train = torch.tensor(X_train, dtype=dtype)
 t_X_valid = torch.tensor(X_valid, dtype=dtype)
 t_X_test = torch.tensor(X_test, dtype=dtype)
-t_Y_train = torch.tensor(Y_train, dtype=dtype)
-t_Y_valid = torch.tensor(Y_valid, dtype=dtype)
-t_Y_test = torch.tensor(Y_test, dtype=dtype)
+t_Y_train = torch.tensor(Y_train, dtype=label_dtype)
+t_Y_valid = torch.tensor(Y_valid, dtype=label_dtype)
+t_Y_test = torch.tensor(Y_test, dtype=label_dtype)
 
 
 # create models
@@ -115,8 +116,7 @@ for model_cfg in l_model_cfgs:
 # start logging
 log(datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S"))
 log()
-log(f'Dataset shape: X={X.shape}, y={y.shape}')
-log(f'Class balance: {y.mean():.3f} gamma, {1-y.mean():.3f} hadron')
+log(f'Dataset shape: X={X_all.shape}, y={y_all.shape}')
 log()
 
 
@@ -124,7 +124,7 @@ log()
 EPOCHS = CFG["training"]["epochs"]
 BATCH_SIZE = CFG["training"]["batch_size"]
 LR = CFG["training"]["lr"]
-loss_func = torch.nn.BCEWithLogitsLoss()
+loss_func = torch.nn.CrossEntropyLoss()
 
 for model_name, model, initializer in list(zip(l_model_names, l_all_models, l_initializers)):
 
@@ -192,45 +192,21 @@ for model_name, model, initializer in list(zip(l_model_names, l_all_models, l_in
         model.update(epoch + 1)
 
     if SHOW_FIGS:
-        matplotlib.use('TkAgg')
         plot_loss(train_losses, validation_losses)
 
     # predict test set
     t_Yhat = model(t_X_test)
-    y_hat_test_classes = (t_Yhat >= 0.5)
     loss_test = loss_func(t_Yhat, t_Y_test) 
 
     # acc
-    y_hat_test_classes = y_hat_test_classes.squeeze()
-    correct = (y_hat_test_classes == torch.squeeze(t_Y_test)).sum()
-    total = y_hat_test_classes.shape[0]
+    correct = (torch.argmax(t_Yhat, dim=-1) == t_Y_test).sum()
+    total = t_Yhat.shape[0]
     acc = correct / total
-    fpr, tpr, _ = roc_curve(np.squeeze(t_Y_test.numpy()), np.squeeze(t_Yhat.detach().numpy()))
-    roc_auc = auc(fpr, tpr)
-
-    if SHOW_FIGS:
-
-        plot_confusion_matrix_labeled(torch.squeeze(t_Y_test), y_hat_test_classes, ["Hadron", "Gamma"])
-
-        # plot code borrowed and modified from GFG
-        # https://www.geeksforgeeks.org/machine-learning/auc-roc-curve/
-        plt.figure(figsize=(7, 5))
-
-        plt.plot(fpr, tpr, label=f'Neural Net (AUC = {roc_auc:.2f})')
-
-        plt.plot([0, 1], [0, 1], 'r--', label='Random Guess')
-
-        plt.xlabel('False Positive Rate')
-        plt.ylabel('True Positive Rate')
-        plt.title('ROC Curve')
-        plt.legend()
-        plt.show()
 
     # log
     log(f"{model_name}")
     log(f"Accuracy: {acc}")
     log(f"Test loss: {loss_test.item()}")
-    log(f"AUC: {roc_auc}")
     log(f"Best model epoch: {best_model_epoch}")
 
     log()

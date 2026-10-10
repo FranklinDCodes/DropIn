@@ -1,0 +1,14 @@
+10/09/2026 16:49:46
+
+Dataset shape: X=(70000, 784), y=(70000,)
+
+InterNVG
+Accuracy: 0.9678094983100891
+Test loss: 0.13781952857971191
+Best model epoch: 107
+
+baseline_parity
+Accuracy: 0.9762856960296631
+Test loss: 0.1589636355638504
+Best model epoch: 57
+

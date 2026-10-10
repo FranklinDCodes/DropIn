@@ -14,7 +14,7 @@
     "models": [
         {
             "name": "InterNVG",
-            "layers": [128, 10],
+            "layers": [32, 10],
             "init": {
                 "type": "interNVG",
                 "kwargs": {
@@ -25,7 +25,7 @@
         },
         {
             "name": "baseline_parity",
-            "layers": [128, 10],
+            "layers": [32, 10],
             "init": {"type": "glorot"}
         }
     ]

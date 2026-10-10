@@ -1,5 +1,5 @@
 {
-    "note": "MNIST baseline",
+    "note": "more epochs, less disparity",
     "seed": 42,
     "dataset": {
         "test_split": 0.15,
@@ -7,25 +7,25 @@
         "bits": 32
     },
     "training": {
-        "epochs": 200,
+        "epochs": 350,
         "batch_size": 256,
         "lr": 0.0003
     },
     "models": [
         {
             "name": "InterNVG",
-            "layers": [128, 10],
+            "layers": [32, 10],
             "init": {
                 "type": "interNVG",
                 "kwargs": {
-                    "starting_feature_var": 3.0,
+                    "starting_feature_var": 2.0,
                     "starting_neuron_var": 0.1 
                 }
             }
         },
         {
             "name": "baseline_parity",
-            "layers": [128, 10],
+            "layers": [32, 10],
             "init": {"type": "glorot"}
         }
     ]
