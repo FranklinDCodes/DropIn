@@ -57,12 +57,6 @@ X_temp, X_test, y_temp, Y_test = train_test_split(
 X_train, X_valid, Y_train, Y_valid = train_test_split(
     X_temp, y_temp, test_size=VAL_SIZE / (1 - TEST_SIZE), random_state=SEED)
 
-
-norm = MinMaxScaler()
-X_train = norm.fit_transform(X_train)
-X_valid = norm.transform(X_valid)
-X_test = norm.transform(X_test)
-
 # make tensors
 d_dtypes = {
 	32: torch.float32,
@@ -115,8 +109,8 @@ for model_cfg in l_model_cfgs:
 # start logging
 log(datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S"))
 log()
-log(f'Dataset shape: X={X.shape}, y={y.shape}')
-log(f'Class balance: {y.mean():.3f} gamma, {1-y.mean():.3f} hadron')
+log(f'Dataset shape: X={X_all.shape}, y={y_all.shape}')
+log(f'Class balance: {y_all.mean():.3f} gamma, {1-y_all.mean():.3f} hadron')
 log()
 
 
@@ -134,8 +128,8 @@ for model_name, model, initializer in list(zip(l_model_names, l_all_models, l_in
     initializer(model)
 
     optim = torch.optim.AdamW(model.parameters(), lr=LR)
-    train_losses = []
     validation_losses = []
+    train_losses = []
 	
     best_val_loss = float("inf")
     best_model = deepcopy(model)
@@ -229,11 +223,9 @@ for model_name, model, initializer in list(zip(l_model_names, l_all_models, l_in
     # log
     log(f"{model_name}")
     log(f"Accuracy: {acc}")
+    log(f"Best train loss: {min(train_losses)}")
+    log(f"Best validation loss: {min(validation_losses)}")
     log(f"Test loss: {loss_test.item()}")
     log(f"AUC: {roc_auc}")
     log(f"Best model epoch: {best_model_epoch}")
-
     log()
-
-
-
