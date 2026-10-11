@@ -15,6 +15,13 @@ This is all gen_02
 
 gen_03 is like gen_02 but made for mnist
 
+gen_04 is gen_03 but all these configs were ran after a bug fix. Bug was superflous sqrt() call for the glorot_variance formula (calcing sqrt and not variance)
+
+
+need to run with multiple seeds
+
+
+
 
 Other ideas include a -log mean neuron output signal variance for each hidden layer term in the loss,
     or boosting random weight updates (higher lr) to strengthen connections that seem generally positive

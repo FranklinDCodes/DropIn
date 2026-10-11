@@ -1,0 +1,29 @@
+10/10/2026 23:45:07
+Dataset shape: X=(70000, 784), y=(70000,)
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.0025237128138542175
+Mean col variance (neuron-to-neuron weight variance): 1.2588940080604516e-05
+
+Accuracy: 0.9121904969215393
+Best train loss: 0.20045947336177436
+Best validation loss: 0.3080226480960846
+Test loss: 0.3202993869781494
+Best model epoch: 34
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002590808318927884
+Mean row variance (feature-to-feature weight variance): 0.00227316003292799
+Mean col variance (neuron-to-neuron weight variance): 0.0025857388973236084
+
+Accuracy: 0.9228571653366089
+Best train loss: 0.17745219402410545
+Best validation loss: 0.2726381719112396
+Test loss: 0.29222577810287476
+Best model epoch: 77
+

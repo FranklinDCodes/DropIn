@@ -29,7 +29,7 @@ def InterNVG(
     # each column j is noise + sample_feat_vec[j] (broadcast across rows)
     weight_mat_raw = torch.randn(fan_in, fan_out, generator=gen) * starting_neuron_var + sample_feat_vec
 
-    glorot_var = sqrt(2 / (fan_in + fan_out))
+    glorot_var = 2 / (fan_in + fan_out)
 
     # bring back to desired distribution
     weight_mat = torch.sqrt(

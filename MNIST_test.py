@@ -1,20 +1,14 @@
 
 import json
 import datetime
-import requests
-from io import StringIO
 from copy import deepcopy
 import sys
 
-import pandas as pd
 import numpy as np
 import torch
 
-from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import roc_curve, auc
 from sklearn.datasets import fetch_openml
-import matplotlib
 
 from model import *
 from plotting import *
@@ -126,6 +120,14 @@ for model_name, model, initializer in list(zip(l_model_names, l_all_models, l_in
     # initialize model params
     initializer(model)
 
+    # log sample weight matrix
+    log(f"{model_name}")
+    log(f"Sample weight shape: {model.layers[0].weight.shape}")
+    log(f"Kaiming variance: {2 / sum(model.layers[0].weight.shape)}")
+    log(f"Matrix variance: {torch.var(model.layers[0].weight, unbiased=False)}")
+    log(f"Mean row variance (feature-to-feature weight variance): {torch.mean(torch.var(model.layers[0].weight, 0, unbiased=False))}")
+    log(f"Mean col variance (neuron-to-neuron weight variance): {torch.mean(torch.var(model.layers[0].weight, 1, unbiased=False))}\n")
+
     optim = torch.optim.AdamW(model.parameters(), lr=LR)
     validation_losses = []
     train_losses = []
@@ -197,7 +199,6 @@ for model_name, model, initializer in list(zip(l_model_names, l_all_models, l_in
     acc = correct / total
 
     # log
-    log(f"{model_name}")
     log(f"Accuracy: {acc}")
     log(f"Best train loss: {min(train_losses)}")
     log(f"Best validation loss: {min(validation_losses)}")

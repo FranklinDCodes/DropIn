@@ -1,0 +1,10 @@
+10/10/2026 23:44:54
+Dataset shape: X=(70000, 784), y=(70000,)
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.0025237128138542175
+Mean col variance (neuron-to-neuron weight variance): 1.2588940080604516e-05
+

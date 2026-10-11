@@ -1,0 +1,19 @@
+10/10/2026 22:45:58
+Dataset shape: X=(70000, 784), y=(70000,)
+
+InterNVG
+Sample weight shape: torch.Size([32, 784])
+Accuracy: 0.9524762034416199
+Best train loss: 0.00963089084731681
+Best validation loss: 0.155851811170578
+Test loss: 0.21701425313949585
+Best model epoch: 107
+
+baseline_parity
+Sample weight shape: torch.Size([32, 784])
+Accuracy: 0.9590476155281067
+Best train loss: 0.0014429122585024
+Best validation loss: 0.12388984858989716
+Test loss: 0.21435679495334625
+Best model epoch: 81
+
