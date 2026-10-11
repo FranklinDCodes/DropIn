@@ -1,0 +1,111 @@
+10/11/2026 09:45:40
+Dataset shape: X=(70000, 784), y=(70000,)
+
+
+Using seed 24
+
+InterNVG
+Sample weight shape: torch.Size([64, 784])
+Kaiming variance: 0.0023584905660377358
+Matrix variance: 0.0023584901355206966
+Mean row variance (feature-to-feature weight variance): 0.0023583180736750364
+Mean col variance (neuron-to-neuron weight variance): 1.0940158063021954e-05
+Accuracy: 0.9675238132476807
+Best train loss: 0.0002688546080560404
+Best validation loss: 0.10466703027486801
+Test loss: 0.17364321649074554
+Best model epoch: 16
+
+baseline_parity
+Sample weight shape: torch.Size([64, 784])
+Kaiming variance: 0.0023584905660377358
+Matrix variance: 0.002362082712352276
+Mean row variance (feature-to-feature weight variance): 0.0023252738174051046
+Mean col variance (neuron-to-neuron weight variance): 0.002359102014452219
+Accuracy: 0.970380961894989
+Best train loss: 0.0003116374464553534
+Best validation loss: 0.0977669507265091
+Test loss: 0.14850609004497528
+Best model epoch: 10
+
+
+Using seed 25
+
+InterNVG
+Sample weight shape: torch.Size([64, 784])
+Kaiming variance: 0.0023584905660377358
+Matrix variance: 0.0023584908340126276
+Mean row variance (feature-to-feature weight variance): 0.002358311554417014
+Mean col variance (neuron-to-neuron weight variance): 1.1752018508559559e-05
+Accuracy: 0.9649524092674255
+Best train loss: 0.00023369626576385022
+Best validation loss: 0.10178250819444656
+Test loss: 0.17048582434654236
+Best model epoch: 19
+
+baseline_parity
+Sample weight shape: torch.Size([64, 784])
+Kaiming variance: 0.0023584905660377358
+Matrix variance: 0.0023566873278468847
+Mean row variance (feature-to-feature weight variance): 0.002320703584700823
+Mean col variance (neuron-to-neuron weight variance): 0.0023544211871922016
+Accuracy: 0.9705714583396912
+Best train loss: 0.0003549988610593944
+Best validation loss: 0.10562872886657715
+Test loss: 0.14248797297477722
+Best model epoch: 10
+
+
+
+
+Aggregate results
+Accuracy: {
+    "InterNVG": {
+        "mean": 0.96624,
+        "std": 0.00182
+    },
+    "baseline_parity": {
+        "mean": 0.97048,
+        "std": 0.00013
+    }
+}
+Test loss: {
+    "InterNVG": {
+        "mean": 0.17206,
+        "std": 0.00223
+    },
+    "baseline_parity": {
+        "mean": 0.1455,
+        "std": 0.00426
+    }
+}
+Best validation loss: {
+    "InterNVG": {
+        "mean": 0.10322,
+        "std": 0.00204
+    },
+    "baseline_parity": {
+        "mean": 0.1017,
+        "std": 0.00556
+    }
+}
+Best train loss: {
+    "InterNVG": {
+        "mean": 0.00025,
+        "std": 2e-05
+    },
+    "baseline_parity": {
+        "mean": 0.00033,
+        "std": 3e-05
+    }
+}
+Best epoch: {
+    "InterNVG": {
+        "mean": 17.5,
+        "std": 2.12132
+    },
+    "baseline_parity": {
+        "mean": 10.0,
+        "std": 0.0
+    }
+}
