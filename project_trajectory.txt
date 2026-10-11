@@ -17,8 +17,7 @@ gen_03 is like gen_02 but made for mnist
 
 gen_04 is gen_03 but all these configs were ran after a bug fix. Bug was superflous sqrt() call for the glorot_variance formula (calcing sqrt and not variance)
 
-
-need to run with multiple seeds
+gen_05 is meant to have a use_n_seeds tag in it and average together results from that many seeds
 
 
 
