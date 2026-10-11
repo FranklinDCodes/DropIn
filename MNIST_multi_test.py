@@ -30,7 +30,6 @@ def log(s: any = "", print_to_screen: bool = True, write_to_file: bool = True) -
 		with open(LOG_NAME, 'a') as fl:
 			fl.write(str(s) + '\n')
 
-
 # seed
 START_SEED = CFG["seed"]
 USE_N_SEEDS = CFG["use_n_seeds"]

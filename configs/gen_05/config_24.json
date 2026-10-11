@@ -1,7 +1,7 @@
 {
     "note": "multi small model baseline more intense",
     "seed": 24,
-    "use_n_seeds": 2,
+    "use_n_seeds": 32,
     "dataset": {
         "test_split": 0.15,
         "valid_split": 0.15,
