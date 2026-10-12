@@ -19,6 +19,7 @@ gen_04 is gen_03 but all these configs were ran after a bug fix. Bug was superfl
 
 gen_05 is meant to have a use_n_seeds tag in it and average together results from that many seeds
 
+gen_06 is exactly like gen 5 but the std devs are switched for features and neurons. Essentially now doing IntraNVG
 
 
 

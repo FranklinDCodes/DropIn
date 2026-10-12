@@ -1,0 +1,33 @@
+{
+    "note": "multi with big model more intense",
+    "seed": 24,
+    "use_n_seeds": 32,
+    "dataset": {
+        "test_split": 0.15,
+        "valid_split": 0.15,
+        "bits": 32
+    },
+    "training": {
+        "epochs": 125,
+        "batch_size": 256,
+        "lr": 0.003
+    },
+    "models": [
+        {
+            "name": "InterNVG",
+            "layers": [64, 10],
+            "init": {
+                "type": "interNVG",
+                "kwargs": {
+                    "starting_feature_var": 0.1,
+                    "starting_neuron_var": 3.0
+                }
+            }
+        },
+        {
+            "name": "baseline_parity",
+            "layers": [64, 10],
+            "init": {"type": "glorot"}
+        }
+    ]
+}
