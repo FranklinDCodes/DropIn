@@ -1,0 +1,921 @@
+10/12/2026 10:33:37
+Dataset shape: X=(70000, 784), y=(70000,)
+
+
+Using seed 24
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.0022203249391168356
+Mean col variance (neuron-to-neuron weight variance): 0.002492978237569332
+Accuracy: 0.9193333387374878
+Best train loss: 0.19045849898396705
+Best validation loss: 0.29640740156173706
+Test loss: 0.31100553274154663
+Best model epoch: 53
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002590808318927884
+Mean row variance (feature-to-feature weight variance): 0.00227316003292799
+Mean col variance (neuron-to-neuron weight variance): 0.0025857388973236084
+Accuracy: 0.9200000166893005
+Best train loss: 0.1752250578646757
+Best validation loss: 0.2772352397441864
+Test loss: 0.30892035365104675
+Best model epoch: 45
+
+
+Using seed 25
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.0022291122004389763
+Mean col variance (neuron-to-neuron weight variance): 0.0025083792861551046
+Accuracy: 0.9125714302062988
+Best train loss: 0.193815278481464
+Best validation loss: 0.2929437756538391
+Test loss: 0.3152537941932678
+Best model epoch: 19
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0024974688421934843
+Mean row variance (feature-to-feature weight variance): 0.002202756702899933
+Mean col variance (neuron-to-neuron weight variance): 0.002495517721399665
+Accuracy: 0.916857123374939
+Best train loss: 0.17811486311104832
+Best validation loss: 0.2918090224266052
+Test loss: 0.31208139657974243
+Best model epoch: 27
+
+
+Using seed 26
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002525252290070057
+Mean row variance (feature-to-feature weight variance): 0.002222007606178522
+Mean col variance (neuron-to-neuron weight variance): 0.00249576848000288
+Accuracy: 0.9255238175392151
+Best train loss: 0.17238140524650106
+Best validation loss: 0.27740079164505005
+Test loss: 0.26840177178382874
+Best model epoch: 54
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025385941844433546
+Mean row variance (feature-to-feature weight variance): 0.0022293622605502605
+Mean col variance (neuron-to-neuron weight variance): 0.0025347527116537094
+Accuracy: 0.9133333563804626
+Best train loss: 0.201670529312017
+Best validation loss: 0.28872552514076233
+Test loss: 0.3055289387702942
+Best model epoch: 27
+
+
+Using seed 27
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.002190410392358899
+Mean col variance (neuron-to-neuron weight variance): 0.002507211407646537
+Accuracy: 0.9160952568054199
+Best train loss: 0.19397901353300834
+Best validation loss: 0.2914327383041382
+Test loss: 0.3124127984046936
+Best model epoch: 33
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002554357750341296
+Mean row variance (feature-to-feature weight variance): 0.002214293461292982
+Mean col variance (neuron-to-neuron weight variance): 0.0025498983450233936
+Accuracy: 0.9155238270759583
+Best train loss: 0.1995144018494353
+Best validation loss: 0.28526684641838074
+Test loss: 0.3111947178840637
+Best model epoch: 25
+
+
+Using seed 28
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.0021999941673129797
+Mean col variance (neuron-to-neuron weight variance): 0.002501176204532385
+Accuracy: 0.9207618832588196
+Best train loss: 0.19003790669538537
+Best validation loss: 0.28700682520866394
+Test loss: 0.3018375039100647
+Best model epoch: 37
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025270262267440557
+Mean row variance (feature-to-feature weight variance): 0.002198766451328993
+Mean col variance (neuron-to-neuron weight variance): 0.0025260993279516697
+Accuracy: 0.915142834186554
+Best train loss: 0.18542452171384072
+Best validation loss: 0.28480425477027893
+Test loss: 0.3098311722278595
+Best model epoch: 27
+
+
+Using seed 29
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.002196001121774316
+Mean col variance (neuron-to-neuron weight variance): 0.0025205975398421288
+Accuracy: 0.9206666946411133
+Best train loss: 0.1874394588178518
+Best validation loss: 0.26948556303977966
+Test loss: 0.27951958775520325
+Best model epoch: 39
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025903619825839996
+Mean row variance (feature-to-feature weight variance): 0.0022529668640345335
+Mean col variance (neuron-to-neuron weight variance): 0.0025862681213766336
+Accuracy: 0.9143809676170349
+Best train loss: 0.1901213787331873
+Best validation loss: 0.2752254009246826
+Test loss: 0.3023361563682556
+Best model epoch: 20
+
+
+Using seed 30
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252520572394133
+Mean row variance (feature-to-feature weight variance): 0.0022335073444992304
+Mean col variance (neuron-to-neuron weight variance): 0.0024854778312146664
+Accuracy: 0.9285714030265808
+Best train loss: 0.18172918979002506
+Best validation loss: 0.28043675422668457
+Test loss: 0.26219961047172546
+Best model epoch: 18
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002518861088901758
+Mean row variance (feature-to-feature weight variance): 0.0022247310262173414
+Mean col variance (neuron-to-neuron weight variance): 0.0025162796955555677
+Accuracy: 0.9236190319061279
+Best train loss: 0.18572013912152271
+Best validation loss: 0.27913594245910645
+Test loss: 0.27321216464042664
+Best model epoch: 35
+
+
+Using seed 31
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002525252290070057
+Mean row variance (feature-to-feature weight variance): 0.0021961478050798178
+Mean col variance (neuron-to-neuron weight variance): 0.0025032886769622564
+Accuracy: 0.9216190576553345
+Best train loss: 0.17664263205625572
+Best validation loss: 0.2661890983581543
+Test loss: 0.28111734986305237
+Best model epoch: 29
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002546887844800949
+Mean row variance (feature-to-feature weight variance): 0.002211812185123563
+Mean col variance (neuron-to-neuron weight variance): 0.002544089686125517
+Accuracy: 0.915142834186554
+Best train loss: 0.18830289142958972
+Best validation loss: 0.2679164409637451
+Test loss: 0.31694725155830383
+Best model epoch: 57
+
+
+Using seed 32
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.0021791609469801188
+Mean col variance (neuron-to-neuron weight variance): 0.0025066426023840904
+Accuracy: 0.9167618751525879
+Best train loss: 0.19000574552769564
+Best validation loss: 0.2854180634021759
+Test loss: 0.30158278346061707
+Best model epoch: 41
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025262744165956974
+Mean row variance (feature-to-feature weight variance): 0.0021768140140920877
+Mean col variance (neuron-to-neuron weight variance): 0.0025230171158909798
+Accuracy: 0.9107618927955627
+Best train loss: 0.19965112601980872
+Best validation loss: 0.2917270362377167
+Test loss: 0.3205793797969818
+Best model epoch: 21
+
+
+Using seed 33
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.0022298404946923256
+Mean col variance (neuron-to-neuron weight variance): 0.002500736154615879
+Accuracy: 0.9248571395874023
+Best train loss: 0.1660919412751587
+Best validation loss: 0.2592153549194336
+Test loss: 0.28146812319755554
+Best model epoch: 96
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002558768028393388
+Mean row variance (feature-to-feature weight variance): 0.0022568157874047756
+Mean col variance (neuron-to-neuron weight variance): 0.002556983847171068
+Accuracy: 0.9200000166893005
+Best train loss: 0.18601843768966442
+Best validation loss: 0.26855283975601196
+Test loss: 0.3010680675506592
+Best model epoch: 19
+
+
+Using seed 34
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.002239552326500416
+Mean col variance (neuron-to-neuron weight variance): 0.0025099054910242558
+Accuracy: 0.9138095378875732
+Best train loss: 0.18705742593687408
+Best validation loss: 0.2904230058193207
+Test loss: 0.3111196756362915
+Best model epoch: 36
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025266711600124836
+Mean row variance (feature-to-feature weight variance): 0.002240070141851902
+Mean col variance (neuron-to-neuron weight variance): 0.0025249680038541555
+Accuracy: 0.9140952229499817
+Best train loss: 0.19466498616763522
+Best validation loss: 0.2951599955558777
+Test loss: 0.3219684362411499
+Best model epoch: 15
+
+
+Using seed 35
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002525252290070057
+Mean row variance (feature-to-feature weight variance): 0.0022248290479183197
+Mean col variance (neuron-to-neuron weight variance): 0.0025187982246279716
+Accuracy: 0.9199047684669495
+Best train loss: 0.1784416756581287
+Best validation loss: 0.277851402759552
+Test loss: 0.29372891783714294
+Best model epoch: 32
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002467164071276784
+Mean row variance (feature-to-feature weight variance): 0.002174355322495103
+Mean col variance (neuron-to-neuron weight variance): 0.0024585644714534283
+Accuracy: 0.9245714545249939
+Best train loss: 0.17196847707398083
+Best validation loss: 0.2737550437450409
+Test loss: 0.2816093862056732
+Best model epoch: 21
+
+
+Using seed 36
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002525252290070057
+Mean row variance (feature-to-feature weight variance): 0.002217542380094528
+Mean col variance (neuron-to-neuron weight variance): 0.0025050777476280928
+Accuracy: 0.9219047427177429
+Best train loss: 0.17711930749854263
+Best validation loss: 0.27924007177352905
+Test loss: 0.2851661443710327
+Best model epoch: 65
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0024755788035690784
+Mean row variance (feature-to-feature weight variance): 0.0021718742791563272
+Mean col variance (neuron-to-neuron weight variance): 0.0024729985743761063
+Accuracy: 0.9174285531044006
+Best train loss: 0.1948548599043671
+Best validation loss: 0.28681230545043945
+Test loss: 0.303598016500473
+Best model epoch: 28
+
+
+Using seed 37
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.0022119146306067705
+Mean col variance (neuron-to-neuron weight variance): 0.0024875751696527004
+Accuracy: 0.9192380905151367
+Best train loss: 0.19145311702757464
+Best validation loss: 0.2908472418785095
+Test loss: 0.2942051589488983
+Best model epoch: 41
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002495426684617996
+Mean row variance (feature-to-feature weight variance): 0.0021812445484101772
+Mean col variance (neuron-to-neuron weight variance): 0.002492868807166815
+Accuracy: 0.9221904873847961
+Best train loss: 0.17919312741561813
+Best validation loss: 0.27093273401260376
+Test loss: 0.28733640909194946
+Best model epoch: 29
+
+
+Using seed 38
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.002220393856987357
+Mean col variance (neuron-to-neuron weight variance): 0.002504155272617936
+Accuracy: 0.9176190495491028
+Best train loss: 0.17707619555142462
+Best validation loss: 0.2556324303150177
+Test loss: 0.29224860668182373
+Best model epoch: 32
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002523012924939394
+Mean row variance (feature-to-feature weight variance): 0.0022121963556855917
+Mean col variance (neuron-to-neuron weight variance): 0.0025214951019734144
+Accuracy: 0.9194285869598389
+Best train loss: 0.1882370207382708
+Best validation loss: 0.27222388982772827
+Test loss: 0.2882727086544037
+Best model epoch: 18
+
+
+Using seed 39
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002525252290070057
+Mean row variance (feature-to-feature weight variance): 0.00219299690797925
+Mean col variance (neuron-to-neuron weight variance): 0.0025111136492341757
+Accuracy: 0.9175238013267517
+Best train loss: 0.1683383014202118
+Best validation loss: 0.2752646803855896
+Test loss: 0.32387933135032654
+Best model epoch: 15
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002467217855155468
+Mean row variance (feature-to-feature weight variance): 0.002140430733561516
+Mean col variance (neuron-to-neuron weight variance): 0.0024653126019984484
+Accuracy: 0.9120952486991882
+Best train loss: 0.1776404648484016
+Best validation loss: 0.29846224188804626
+Test loss: 0.3319409489631653
+Best model epoch: 18
+
+
+Using seed 40
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.002219999209046364
+Mean col variance (neuron-to-neuron weight variance): 0.0025123634841293097
+Accuracy: 0.9155238270759583
+Best train loss: 0.19552821984826302
+Best validation loss: 0.2761386036872864
+Test loss: 0.3172893524169922
+Best model epoch: 24
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0024763974361121655
+Mean row variance (feature-to-feature weight variance): 0.002175623085349798
+Mean col variance (neuron-to-neuron weight variance): 0.0024749278090894222
+Accuracy: 0.911047637462616
+Best train loss: 0.1994890736828045
+Best validation loss: 0.2903509736061096
+Test loss: 0.32100749015808105
+Best model epoch: 16
+
+
+Using seed 41
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.0022290756460279226
+Mean col variance (neuron-to-neuron weight variance): 0.00251091830432415
+Accuracy: 0.9197142720222473
+Best train loss: 0.17031644784917638
+Best validation loss: 0.2584999203681946
+Test loss: 0.2999119162559509
+Best model epoch: 20
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002567408373579383
+Mean row variance (feature-to-feature weight variance): 0.0022640754468739033
+Mean col variance (neuron-to-neuron weight variance): 0.002563247922807932
+Accuracy: 0.913428544998169
+Best train loss: 0.195160898211051
+Best validation loss: 0.2713950574398041
+Test loss: 0.31958889961242676
+Best model epoch: 46
+
+
+Using seed 42
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.0022242197301238775
+Mean col variance (neuron-to-neuron weight variance): 0.0025035373400896788
+Accuracy: 0.9193333387374878
+Best train loss: 0.18261817414906562
+Best validation loss: 0.27440977096557617
+Test loss: 0.29290658235549927
+Best model epoch: 17
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.00253642862662673
+Mean row variance (feature-to-feature weight variance): 0.002234214683994651
+Mean col variance (neuron-to-neuron weight variance): 0.0025315831881016493
+Accuracy: 0.9142857193946838
+Best train loss: 0.18537939094767278
+Best validation loss: 0.30581900477409363
+Test loss: 0.3139789402484894
+Best model epoch: 31
+
+
+Using seed 43
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.002201859373599291
+Mean col variance (neuron-to-neuron weight variance): 0.002504041651263833
+Accuracy: 0.9165714383125305
+Best train loss: 0.17704344375279485
+Best validation loss: 0.2851405441761017
+Test loss: 0.3093610405921936
+Best model epoch: 19
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0024661466013640165
+Mean row variance (feature-to-feature weight variance): 0.0021476554684340954
+Mean col variance (neuron-to-neuron weight variance): 0.0024625605437904596
+Accuracy: 0.911809504032135
+Best train loss: 0.19847636379027853
+Best validation loss: 0.2943176031112671
+Test loss: 0.33379825949668884
+Best model epoch: 17
+
+
+Using seed 44
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.002210990758612752
+Mean col variance (neuron-to-neuron weight variance): 0.0024930411018431187
+Accuracy: 0.9182857275009155
+Best train loss: 0.17736311493601117
+Best validation loss: 0.28606581687927246
+Test loss: 0.30630990862846375
+Best model epoch: 20
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002528561744838953
+Mean row variance (feature-to-feature weight variance): 0.002207905752584338
+Mean col variance (neuron-to-neuron weight variance): 0.0025266569573432207
+Accuracy: 0.9260952472686768
+Best train loss: 0.15788178026432895
+Best validation loss: 0.2678067088127136
+Test loss: 0.28498709201812744
+Best model epoch: 22
+
+
+Using seed 45
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.0022088410332798958
+Mean col variance (neuron-to-neuron weight variance): 0.002505054697394371
+Accuracy: 0.9205714464187622
+Best train loss: 0.18040103341851915
+Best validation loss: 0.28112006187438965
+Test loss: 0.29202979803085327
+Best model epoch: 29
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025647692382335663
+Mean row variance (feature-to-feature weight variance): 0.0022398699074983597
+Mean col variance (neuron-to-neuron weight variance): 0.0025611589662730694
+Accuracy: 0.9231428503990173
+Best train loss: 0.17921550189962193
+Best validation loss: 0.2857206463813782
+Test loss: 0.2708359956741333
+Best model epoch: 18
+
+
+Using seed 46
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.0022221358958631754
+Mean col variance (neuron-to-neuron weight variance): 0.002506392542272806
+Accuracy: 0.9178095459938049
+Best train loss: 0.18260622460623177
+Best validation loss: 0.28093618154525757
+Test loss: 0.2976086735725403
+Best model epoch: 26
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025226203724741936
+Mean row variance (feature-to-feature weight variance): 0.0022183686960488558
+Mean col variance (neuron-to-neuron weight variance): 0.0025175740011036396
+Accuracy: 0.9268571138381958
+Best train loss: 0.16854067888795113
+Best validation loss: 0.2667330205440521
+Test loss: 0.2608981728553772
+Best model epoch: 55
+
+
+Using seed 47
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.0022208651062101126
+Mean col variance (neuron-to-neuron weight variance): 0.002496454631909728
+Accuracy: 0.9175238013267517
+Best train loss: 0.18257148280678964
+Best validation loss: 0.27449652552604675
+Test loss: 0.2950774133205414
+Best model epoch: 38
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0024794680066406727
+Mean row variance (feature-to-feature weight variance): 0.002177145332098007
+Mean col variance (neuron-to-neuron weight variance): 0.0024779830127954483
+Accuracy: 0.9207618832588196
+Best train loss: 0.17636524679222884
+Best validation loss: 0.2685941755771637
+Test loss: 0.29135584831237793
+Best model epoch: 21
+
+
+Using seed 48
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002525252290070057
+Mean row variance (feature-to-feature weight variance): 0.002165468642488122
+Mean col variance (neuron-to-neuron weight variance): 0.002496355213224888
+Accuracy: 0.9130476117134094
+Best train loss: 0.17646107209458642
+Best validation loss: 0.2778379023075104
+Test loss: 0.3298301696777344
+Best model epoch: 61
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025126689579337835
+Mean row variance (feature-to-feature weight variance): 0.0021509986836463213
+Mean col variance (neuron-to-neuron weight variance): 0.002511207712814212
+Accuracy: 0.9184761643409729
+Best train loss: 0.1816567470273193
+Best validation loss: 0.2816498279571533
+Test loss: 0.3024863600730896
+Best model epoch: 24
+
+
+Using seed 49
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.0022287943866103888
+Mean col variance (neuron-to-neuron weight variance): 0.002457063877955079
+Accuracy: 0.9139047861099243
+Best train loss: 0.18380231092779004
+Best validation loss: 0.2896993160247803
+Test loss: 0.3115955591201782
+Best model epoch: 22
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025323168374598026
+Mean row variance (feature-to-feature weight variance): 0.002227299613878131
+Mean col variance (neuron-to-neuron weight variance): 0.0025275431107729673
+Accuracy: 0.9197142720222473
+Best train loss: 0.1720726343977208
+Best validation loss: 0.27155840396881104
+Test loss: 0.29992902278900146
+Best model epoch: 38
+
+
+Using seed 50
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.002211452927440405
+Mean col variance (neuron-to-neuron weight variance): 0.002466285601258278
+Accuracy: 0.9160000085830688
+Best train loss: 0.1857360157990942
+Best validation loss: 0.2844894826412201
+Test loss: 0.3039919435977936
+Best model epoch: 47
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0024413317441940308
+Mean row variance (feature-to-feature weight variance): 0.0021301910746842623
+Mean col variance (neuron-to-neuron weight variance): 0.002438059076666832
+Accuracy: 0.9211428761482239
+Best train loss: 0.17658857261404698
+Best validation loss: 0.2819331884384155
+Test loss: 0.30106186866760254
+Best model epoch: 46
+
+
+Using seed 51
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252525229007006
+Mean row variance (feature-to-feature weight variance): 0.0022362680174410343
+Mean col variance (neuron-to-neuron weight variance): 0.002500790636986494
+Accuracy: 0.9223809242248535
+Best train loss: 0.15454158494180562
+Best validation loss: 0.26398730278015137
+Test loss: 0.2852628529071808
+Best model epoch: 39
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.002526473253965378
+Mean row variance (feature-to-feature weight variance): 0.0022344293538480997
+Mean col variance (neuron-to-neuron weight variance): 0.00252175354398787
+Accuracy: 0.9122856855392456
+Best train loss: 0.1806362401733593
+Best validation loss: 0.2855735719203949
+Test loss: 0.3122883439064026
+Best model epoch: 22
+
+
+Using seed 52
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.002218168694525957
+Mean col variance (neuron-to-neuron weight variance): 0.002508785342797637
+Accuracy: 0.9207618832588196
+Best train loss: 0.1828155288696289
+Best validation loss: 0.2936352789402008
+Test loss: 0.2967776656150818
+Best model epoch: 101
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025195879861712456
+Mean row variance (feature-to-feature weight variance): 0.002212937455624342
+Mean col variance (neuron-to-neuron weight variance): 0.002518435474485159
+Accuracy: 0.9141904711723328
+Best train loss: 0.18887611491339548
+Best validation loss: 0.2989853620529175
+Test loss: 0.31507229804992676
+Best model epoch: 16
+
+
+Using seed 53
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.002223504474386573
+Mean col variance (neuron-to-neuron weight variance): 0.002512892009690404
+Accuracy: 0.911809504032135
+Best train loss: 0.19265345790434857
+Best validation loss: 0.2946479320526123
+Test loss: 0.31221267580986023
+Best model epoch: 68
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0024894927628338337
+Mean row variance (feature-to-feature weight variance): 0.0021910537034273148
+Mean col variance (neuron-to-neuron weight variance): 0.0024851637426763773
+Accuracy: 0.9120000004768372
+Best train loss: 0.1899149773339836
+Best validation loss: 0.2957966923713684
+Test loss: 0.3215489089488983
+Best model epoch: 15
+
+
+Using seed 54
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252520572394133
+Mean row variance (feature-to-feature weight variance): 0.002226477488875389
+Mean col variance (neuron-to-neuron weight variance): 0.0024704188108444214
+Accuracy: 0.9155238270759583
+Best train loss: 0.1850830592087337
+Best validation loss: 0.28746023774147034
+Test loss: 0.31068649888038635
+Best model epoch: 50
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025171905290335417
+Mean row variance (feature-to-feature weight variance): 0.002213860861957073
+Mean col variance (neuron-to-neuron weight variance): 0.0025153469759970903
+Accuracy: 0.9098095297813416
+Best train loss: 0.20552545307607067
+Best validation loss: 0.30407044291496277
+Test loss: 0.32897770404815674
+Best model epoch: 17
+
+
+Using seed 55
+
+InterNVG
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0025252527557313442
+Mean row variance (feature-to-feature weight variance): 0.002228203695267439
+Mean col variance (neuron-to-neuron weight variance): 0.0024818331003189087
+Accuracy: 0.9139047861099243
+Best train loss: 0.19313379077522122
+Best validation loss: 0.29499635100364685
+Test loss: 0.30797475576400757
+Best model epoch: 65
+
+baseline_parity
+Sample weight shape: torch.Size([8, 784])
+Kaiming variance: 0.0025252525252525255
+Matrix variance: 0.0024419690016657114
+Mean row variance (feature-to-feature weight variance): 0.002149752574041486
+Mean col variance (neuron-to-neuron weight variance): 0.002440439071506262
+Accuracy: 0.9131428599357605
+Best train loss: 0.1844737214750173
+Best validation loss: 0.2830234169960022
+Test loss: 0.31057503819465637
+Best model epoch: 39
+
+
+
+
+Aggregate results
+Accuracy: {
+    "InterNVG": {
+        "mean": 0.91842,
+        "std": 0.00388
+    },
+    "baseline_parity": {
+        "mean": 0.91696,
+        "std": 0.0048
+    }
+}
+Test loss: {
+    "InterNVG": {
+        "mean": 0.2995,
+        "std": 0.01531
+    },
+    "baseline_parity": {
+        "mean": 0.30515,
+        "std": 0.01783
+    }
+}
+Best validation loss: {
+    "InterNVG": {
+        "mean": 0.28059,
+        "std": 0.01119
+    },
+    "baseline_parity": {
+        "mean": 0.28316,
+        "std": 0.01141
+    }
+}
+Best train loss: {
+    "InterNVG": {
+        "mean": 0.18202,
+        "std": 0.00928
+    },
+    "baseline_parity": {
+        "mean": 0.18552,
+        "std": 0.01089
+    }
+}
+Best epoch: {
+    "InterNVG": {
+        "mean": 40.1875,
+        "std": 21.5473
+    },
+    "baseline_parity": {
+        "mean": 27.34375,
+        "std": 11.82291
+    }
+}
